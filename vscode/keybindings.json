@@ -1,0 +1,124 @@
+[
+  {
+    "key": "space+u i",
+    "command": "editor.action.goToImplementation",
+    "when": "editorFocus"
+  },
+  {
+    "key": "space+t n",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  // ***************** Terminal Related ***********************
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminalFocus && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+  },
+  // ***************** Sidebar Related ************************
+  // Search result arrow down
+  {
+      "key": "ctrl+j",
+      "command": "list.focusDown",
+      "when": "listFocus"
+  },
+  {
+      "key": "ctrl+k",
+      "command": "list.focusUp",
+      "when": "listFocus"
+  },
+  // Enter listFocus from inputFocus
+  {
+      "key": "Tab",
+      "command": "list.focusFirst",
+      "when": "inputFocus"
+  },
+  // Toggle between sidebar and editor group
+  {
+      "key": "ctrl+s",
+      "command": "workbench.action.focusSideBar",
+      "when": "editorFocus"
+  },
+  {
+      "key": "ctrl+s",
+      "command": "workbench.action.focusActiveEditorGroup",
+      "when": "!editorFocus"
+  },
+  // ***************** Quick pick panel related *************
+  {
+      "key": "ctrl+j",
+      "command": "workbench.action.quickOpenSelectNext",
+      "when": "inQuickOpen"
+  },
+  {
+      "key": "ctrl+k",
+      "command": "workbench.action.quickOpenSelectPrevious",
+      "when": "inQuickOpen"
+  },
+  {
+      "key": "ctrl+c",
+      "command": "workbench.action.closeQuickOpen",
+      "when": "inQuickOpen"
+  },
+  // ***************** Breadcrums related *******************
+  {
+    "key": "ctrl+b",
+    "command": "breadcrumbs.toggle"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "breadcrumbs.focusPrevious",
+    "when": "breadcrumbsActive && breadcrumbsVisible"
+  },
+  {
+    "key": "alt+left",
+    "command": "-breadcrumbs.focusPrevious",
+    "when": "breadcrumbsActive && breadcrumbsVisible"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "breadcrumbs.focusNextWithPicker",
+    "when": "breadcrumbsActive && breadcrumbsVisible && listFocus && !inputFocus"
+  },
+  {
+    "key": "alt+right",
+    "command": "-breadcrumbs.focusNextWithPicker",
+    "when": "breadcrumbsActive && breadcrumbsVisible && listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "breadcrumbs.selectEditor",
+    "when": "breadcrumbsActive && breadcrumbsVisible"
+  },
+  // ***************** Peek Type Definition *******************
+  {
+    "key": "ctrl+c",
+    "command": "closeReferenceSearch",
+    "when": "referenceSearchVisible && !config.editor.stablePeek"
+  },
+  // ***************** File Explorer **************************
+  {
+    "key": "ctrl+r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  }
+]
