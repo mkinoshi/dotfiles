@@ -1,11 +1,11 @@
 {
-  "workbench.settings.editor": "json",
   "editor.fontSize": 12,
   "terminal.integrated.fontSize": 12,
   "editor.wordWrap": "on",
   "files.trimTrailingWhitespace": true,
   "editor.minimap.enabled": false,
   // **************** WORK BENCH ******************
+  "workbench.settings.editor": "json",
   "workbench.editor.labelFormat": "short",
   "workbench.editor.revealIfOpen": true,
   "workbench.editor.showIcons": true,
@@ -13,18 +13,23 @@
   "workbench.editor.tabCloseButton": "left",
   "workbench.startupEditor": "none",
   "workbench.editor.openPositioning": "last",
+  "workbench.editor.showTabs": true,
   "workbench.editor.enablePreview": false,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 2,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.list.openMode": "doubleClick",
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#002255", //現在の行の背景色
     "editor.selectionBackground": "#31ca4a77", //選択業の背景
     "editor.selectionHighlightBorder": "#00e1ff", //線学業の前背景
     "editorError.border": "#ff0000", //エラーの下線の色
-    "tab.activeBackground": "#31ca4a77", //アクティブなタブの色
-    "tab.unfocusedActiveBackground": "#002255",
-    "tab.inactiveForeground": "#999999", //アクティブでないタブの色
-    "editorSuggestWidget.selectedBackground": "#4792b4", //選択しているサジェストの背景色
+    "tab.unfocusedActiveForeground": "#e6e5e3ad", //Unfocused Active Foreground Color
+    "tab.activeForeground": "#00ff00",
+    "editorSuggestWidget.selectedBackground": "#47b447", //選択しているサジェストの背景色
     "editorSuggestWidget.foreground": "#f1efef", //選択しているサジェストの文字色
-    "editorWhitespace.foreground": "#8a8888" //tab等の制御文字
+    "editorWhitespace.foreground": "#8a8888", //tab等の制御文字
+    "editor.findMatchHighlightBackground": "#fa0808a2" // Matched words
   },
   // **************** ZEN *************************
   "zenMode.fullScreen": true,
@@ -130,8 +135,21 @@
       "commands": [{ "command": "editor.action.blockComment" }]
     }
   ],
-  "breadcrumbs.enabled": true,
-  "aws.profile": "profile:default",
   "window.zoomLevel": 0,
-  "diffEditor.ignoreTrimWhitespace": false
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "aws.profile": "profile:default",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ]
 }
