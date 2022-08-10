@@ -1,7 +1,7 @@
 {
   "editor.fontSize": 12,
   "terminal.integrated.fontSize": 12,
-  "editor.wordWrap": "on",
+  "editor.wordWrap": "off",
   "files.trimTrailingWhitespace": true,
   "editor.minimap.enabled": false,
   // **************** WORK BENCH ******************
@@ -146,10 +146,39 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.cursorStyle": "line",
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "cSpell.userWords": [
+    "tradeup"
+  ],
+  "editor.inlineSuggest.enabled": true,
+  "[elixir]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "json.schemas": [],
+  "jupyter.jupyterServerType": "remote",
+  "sonarlint.rules": {
+    "python:S107": {
+      "level": "off"
     }
-  ]
+  },
+  "remote.SSH.defaultExtensions": [
+    "gitpod.gitpod-remote-ssh"
+  ],
+  "remote.SSH.configFile": "/var/folders/wj/wt9n7fzx3xs_cb7n931c4sch0000gn/T/gitpod_ssh_config-89745-9K0Xmx62DKO4",
+  "breadcrumbs.enabled": true,
 }

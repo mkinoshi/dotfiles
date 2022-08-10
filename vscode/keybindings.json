@@ -42,11 +42,11 @@
       "when": "listFocus"
   },
   // Enter listFocus from inputFocus
-  {
+/*   {
       "key": "Tab",
       "command": "list.focusFirst",
       "when": "inputFocus"
-  },
+  }, */
   // Toggle between sidebar and editor group
   {
       "key": "ctrl+s",
